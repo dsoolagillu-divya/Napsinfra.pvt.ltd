@@ -6,9 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Authentication</title>
     <meta name="description" content="">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <style>
+        body{
+            background-image: url("https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2021/05/1440x900-02-6.jpg");
+        }
+        .heading{
+            display: inline-block;
+            margin-left: 500px;
+            margin-top: 30px;
+            color: rgb(46, 46, 53);
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            border: 2px double rgb(235, 175, 12);
+            font-size: 25px;
+            box-shadow: 5px 0px 30px rgb(227, 157, 6);
+            height: 40px;
+            border-radius: 20px;
+            padding: 10px;
+            
+            
+            
+
+        }
+        .main{
+            text-align: center;
+            font-size: 20px;
+            border: 5px solid black;
+            height: 300px;
+            width: 250px;
+            padding: 20px;
+            margin-left: 620px;
+            margin-top: 50px;
+            border-radius: 25px;
+        }
+        .title{
+            font-size: 20pxpx;
+        }
+        .sin{
+            font-size: 25px;
+            color: black;
+            border-radius: 7px;
+           margin-left: 10px;
+           margin-top: 30px;
+            background-color: rgb(255, 237, 217);
+           
+
+        }
+        .sin:hover{
+           background-color: rgb(185, 233, 161);
+           }
+        
+        .sup{
+            font-size: 25px;
+            color: black;
+            border-radius: 7px;
+            margin-right: 10px;
+            margin-top: 30px;
+           background-color: rgb(255, 237, 217);
+
+        }
+        .sup:hover{
+           background-color: rgb(185, 233, 161);
+           }
+        
+    </style>
 </head>
 <body>
+    <h3 class="heading">NAPS INFRASTRUCTURE PRIVATE LIMITED</h3>
+    <div class="main">
    {% for message in messages %}
    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
    <strong>Message:</strong> {{ message }}
@@ -17,7 +83,7 @@
    </button>
    </div>
    {% endfor %}
-   <h3>Welcome to NAPS INFRASTRUCTURES</h3>
+   <h3 class="title">NAPS INFRASTRUCTURES</h3>
 
    {% if user.is_authenticated %} 
    <h3>Hello {{ fname }}</h3>
@@ -25,11 +91,12 @@
    <button type="submit" ><a href="/signout"> SignOut</a></button>
 
    {% else %}
-   <button type="submit" ><a href="/signin"> SignIn</a></button>
-   <button type="submit" ><a href="/signup"> SignUp</a></button>
+   <button type="submit" class="sup" ><a href="/signup"> SignUp</a></button>
+   <button type="submit" class="sin" ><a href="/signin"> SignIn</a></button>
+   
    {% endif %}
  
-   
+   </div>
 
 </body>
 </html>

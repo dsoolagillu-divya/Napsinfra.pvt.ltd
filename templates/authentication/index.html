@@ -10,10 +10,7 @@
     <style>
         body{
             background-image: url("https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2021/05/1440x900-02-6.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            min-height: 100vh;
+           
         }
         .heading{
             display: inline-block;
@@ -34,21 +31,18 @@
 
         }
         .main{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+           
             text-align: center;
             font-size: 20px;
             border: 5px solid black;
             height: 300px;
-            width: 90%;
-            max-width: 420px;
+            width: 250px;
+          
             padding: 20px;
             margin-left: 620px;
             margin-top: 50px;
             border-radius: 25px;
-            position: absolute;
+            
         }
         .title{
             font-size: 20pxpx;
@@ -98,11 +92,11 @@
    {% if user.is_authenticated %} 
    <h3>Hello {{ fname }}</h3>
    <h4>You're Successfully logged in.</h4>
-        <button type="submit" ><a href="/signout"> SignOut</a></button>
+    <button type="submit" ><a href="/signout"> SignOut</a></button>
 
    {% else %}
-        <button type="submit" class="sup" ><a href="/signup"> SignUp</a></button>
-        <button type="submit" class="sin" ><a href="/signin"> SignIn</a></button>
+    <button type="submit" class="sup" ><a href="/signup"> SignUp</a></button>
+    <button type="submit" class="sin" ><a href="/signin"> SignIn</a></button>
    
    {% endif %}
  

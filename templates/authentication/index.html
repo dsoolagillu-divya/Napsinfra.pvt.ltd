@@ -87,16 +87,16 @@
    </button>
    </div>
    {% endfor %}
-        <h3 class="title">NAPS INFRASTRUCTURES</h3>
+   <h3 class="title">NAPS INFRASTRUCTURES</h3>
 
    {% if user.is_authenticated %} 
    <h3>Hello {{ fname }}</h3>
    <h4>You're Successfully logged in.</h4>
-    <button type="submit" ><a href="/signout"> SignOut</a></button>
+   <button type="submit" ><a href="/signout"> SignOut</a></button>
 
    {% else %}
-    <button type="submit" class="sup" ><a href="/signup"> SignUp</a></button>
-    <button type="submit" class="sin" ><a href="/signin"> SignIn</a></button>
+   <button type="submit" class="sup" ><a href="/signup"> SignUp</a></button>
+   <button type="submit" class="sin" ><a href="/signin"> SignIn</a></button>
    
    {% endif %}
  

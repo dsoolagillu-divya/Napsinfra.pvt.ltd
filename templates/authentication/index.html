@@ -8,22 +8,29 @@
     <meta name="description" content="">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         body{
             background-image: url("https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2021/05/1440x900-02-6.jpg");
-           background-repeat: no-repeat;
+            background-repeat: no-repeat;
             background-size: cover;
              background-position: center;
              height: 100vh;
 
         }
           @media screen and (max-width:600px){
-            body{
-                 background-image: url("https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2021/05/1440x900-02-6.jpg");
-                
+            html, body{
+                background-image: url("https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2021/05/1440x900-02-6.jpg");
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
-
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+               
+                
             }
         }
 
@@ -44,8 +51,10 @@
              }
         @media screen and (max-width:600px){
             .heading{
-                   margin-left: 70px;
+                   margin-left: 8px;
                     font-size: 15px;
+                    padding: 15px;
+                    padding-bottom: 0px;
 
             }
         }
@@ -56,13 +65,19 @@
             border: 5px solid black;
             height: 300px;
             width: 250px;
-          
             padding: 20px;
             margin-left: 620px;
             margin-top: 50px;
             border-radius: 25px;
             
         }
+        @media screen and (max-width:600px){
+            .main{
+             margin-left: 20px;
+              margin-top: 50px;
+        }
+    }
+
         .title{
             font-size: 20pxpx;
         }

@@ -9,37 +9,88 @@
     body{
          
             background-image: url("https://wallpapercave.com/wp/wp8547968.jpg");
-        
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
     }
+     @media screen and (max-width:600px){
+            html, body{
+                background-image: url("https://wallpapercave.com/wp/wp8547968.jpg");
+                background: rgba(234, 224, 224, 0.5);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+
+               
+                
+            }
+        }
     .title{
         text-align: center;
-        margin-top: 40px;
+        margin-top: 20px;
         font-size: 35px;
         color: green;
     }
     form{
         border: 4px double black;
         display: inline-block;
-        margin-left: 470px;
+        margin-left: 570px;
         margin-top: 50px;
         font-size: 25px;
-        width: 500px;
+        width: 400px;
         align-items: center;
-        padding-left: 100px;
+        padding-left: 40px;
         border-radius: 15px;
     }
+    @media screen and (max-width:600px){
+        form{
+            margin-top: 30px;
+            margin-left: 70px;
+            font-size: 20px; 
+            width: 200px;
+            padding-left: 10px;
+           
+
+
+
+
+        }
+    } 
     .u{
         margin-top: 25px;
       margin-bottom: 15px;
+   
     }
+     @media screen and (max-width:600px){
+        .u{
+            margin-top: 5px;
+           margin-bottom: 5px;
+           margin-left: 7px;
+           color: rgb(25, 21, 234);
+          
+           
+        }
+    } 
     .b{
         margin-left: 147px;
         margin-bottom: 20px;
         font-size: 26px;
         margin-top: 40px;
-         border-radius: 10px;
+        border-radius: 10px;
 
     }
+    @media screen and (max-width:600px){
+        .b{
+        margin-left: 40px;
+        font-size: 20px;
+        
+    }
+}
+
     .b:hover{
         background-color: rgb(77, 134, 49);
        

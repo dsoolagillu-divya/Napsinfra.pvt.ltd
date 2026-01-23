@@ -12,7 +12,19 @@
             background-image: url("https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2021/05/1440x900-02-6.jpg");
            
         }
+          @media screen and (max-width:600px){
+            body{
+                 background-image: url("https://zameenblog.s3.amazonaws.com/blog/wp-content/uploads/2021/05/1440x900-02-6.jpg");
+                
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+            }
+        }
+
         .heading{
+
             display: inline-block;
             margin-left: 500px;
             margin-top: 30px;
@@ -25,10 +37,12 @@
             height: 40px;
             border-radius: 20px;
             padding: 10px;
-            
-            
-            
-
+             }
+        @media screen and (max-width:600px){
+            .heading{
+                   margin-left: 70px;
+                    font-size: 15px;
+            }
         }
         .main{
            

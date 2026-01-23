@@ -30,7 +30,7 @@ EMAIL_PORT=EMAIL_PORT
 SECRET_KEY = 'django-insecure-ex1g3*t%c4)0ypn*uvxou0$u0e&etaua#_8u$a1^)jlhr=*-pi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 

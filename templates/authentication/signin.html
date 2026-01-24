@@ -18,7 +18,7 @@
    {% endfor %}
     
     <h3>SignIn</h3>
-    <form action="/signin" method="post">
+    <form action="{% url 'signin' %}" method="post">
     {% csrf_token %}
 
         <label for="">Username</label>
